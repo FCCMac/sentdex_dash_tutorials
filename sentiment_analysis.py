@@ -65,7 +65,7 @@ while True:
         api = tweepy.API(auth)
         stream_listener = Listener()
         twitter_stream = Stream(auth=auth, listener=stream_listener)
-        twitter_stream.filter(track=['python'])
+        twitter_stream.filter(track=['a', 'e', 'i', 'o', 'u'])
     except Exception as e:
         print(str(e))
         time.sleep(5)
